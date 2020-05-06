@@ -5,7 +5,7 @@ class ReadIni():
         if file_name == None:
             file_name = "D:/imooc_selenium/config/localElement.ini"
         if node == None:
-            self.node = 'RegisterElemet'
+            self.node = 'LoginElemet'
         else:
             self.node = node
         self.cf = self.load_ini(file_name)
@@ -21,3 +21,4 @@ class ReadIni():
 if __name__ == '__main__':
     read_init = ReadIni()
     print(read_init.get_value('check_box'))
+
